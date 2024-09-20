@@ -1,0 +1,135 @@
+.popup {
+    background-color: rgba(0, 0, 0, .5);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s linear 0.5s, opacity 0.4s ease-in;
+}
+
+.popup_opened {
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 0s;
+}
+
+.popup__container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40vw;
+    height: 50vh;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.popup__close-button {
+    position: absolute;
+    cursor: pointer;
+    border: none;
+    background: none;
+    width: 32px;
+    height: 32px;
+    right: -40px;
+    top: -40px;
+    padding: 0;
+}
+
+.popup__close-button:before {
+    position: absolute;
+    content: '';
+    height: 32px;
+    border: 2px solid #fff;
+    background-color: #fff;
+    top: 0;
+    transform: rotate(45deg);
+}
+
+.popup__close-button:after {
+    position: absolute;
+    content: '';
+    height: 32px;
+    border: 2px solid #fff;
+    background-color: #fff;
+    top: 0;
+    transform: rotate(-45deg);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.form__input {
+    width: 80%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.form__input:focus {
+    border-color: #ff685b;
+    outline: none;
+}
+
+/* Label styles */
+.form__label {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.form__submit-button {
+    background-color: #ff685b;
+    width: 180px;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.form__submit-button:hover {
+    background-color: #ff685b;
+}
+
+@media (max-width: 850px) {
+    .popup__container {
+        width: 60vw;
+        height: 50vh;
+    }
+    .popup__close-button {
+        width: 20px;
+        height: 20px;
+        right: -20px;
+        top: -20px;
+    }
+    .popup__close-button:before {
+        height: 20px;
+    }
+    
+    .popup__close-button:after {
+        height: 20px;
+    }
+}
+
+@media (max-width: 450px) {
+    .popup__container {
+        width: 80vw;
+        height: 50vh;
+    }
+}

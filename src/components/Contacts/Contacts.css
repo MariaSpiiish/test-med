@@ -1,0 +1,18 @@
+.contacts {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 58px;
+    letter-spacing: 0.2px;
+    align-self: flex-start;
+    margin: 0;
+    padding-left: 15%;
+    margin-top: 185px;
+    
+}
+
+@media (max-width: 481px) {
+    .contacts {
+        padding-left: 7%;
+        font-size: 40px; 
+    }
+}
