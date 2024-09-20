@@ -1,8 +1,14 @@
-# React + Vite
+# React + Vite тестовое задание на позицию Frontend-разработчик/стажер
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Demo
 
-Currently, two official plugins are available:
+[Ссылка на проект на GitPages](https://mariaspiiish.github.io/test-med/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Scripts
+
+При первом запуске проекта
+
+* `npm install` - установить все зависимости
+
+* `npm run dev` - запускает приложение
+
