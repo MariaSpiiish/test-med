@@ -130,6 +130,27 @@
 @media (max-width: 450px) {
     .popup__container {
         width: 80vw;
-        height: 50vh;
+        height: 70vh;
     }
+    .form {
+        gap: 10px;
+    }
+    .popup__close-button {
+        right: 20px;
+        top: 20px;
+    }
+    .popup__close-button:before {
+        border-color: #ff685b;
+    }
+    .popup__close-button:after {
+        border-color: #ff685b;
+    }
+}
+
+
+@media (max-height: 400px) {
+    .popup__container {
+        width: 80vw;
+        height: 90vh;
+    }    
 }
