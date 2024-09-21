@@ -130,7 +130,7 @@
 @media (max-width: 450px) {
     .popup__container {
         width: 80vw;
-        height: 70vh;
+        height: 60vh;
     }
     .form {
         gap: 10px;
